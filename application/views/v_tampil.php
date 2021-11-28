@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Membuat CRUD dengan CodeIgniter | MalasNgoding.com</title>
+    <title>Membuat CRUD dengan CodeIgniter | MalasNgoding.com</title>
 </head>
 <body>
 <center><h1>Membuat CRUD dengan CodeIgniter | MalasNgoding.com</h1></center>

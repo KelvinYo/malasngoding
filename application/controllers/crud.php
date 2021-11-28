@@ -5,14 +5,14 @@ parent::__construct();
 $this->load->model('m_data');
 $this->load->helper('url');
 }
-function index(){
+    function index(){
 $data['user'] = $this->m_data->tampil_data()->result();
 $this->load->view('v_tampil',$data);
 }
-function tambah(){
+    function tambah(){
 $this->load->view('v_input');
 }
-function tambah_aksi(){
+    function tambah_aksi(){
 $nama = $this->input->post('nama');
 $alamat = $this->input->post('alamat');
 $pekerjaan = $this->input->post('pekerjaan');
@@ -24,12 +24,12 @@ $data = array(
 $this->m_data->input_data($data,'user');
 redirect('crud/index');
 }
-function hapus($id){
+    function hapus($id){
 $where = array('id' => $id);
 $this->m_data->hapus_data($where,'user');
 redirect('crud/index');
 }
-function edit($id){
+    function edit($id){
 $where = array('id' => $id);
 $data['user'] = $this->m_data->edit_data($where,'user')->result();
 $this->load->view('v_edit',$data);
